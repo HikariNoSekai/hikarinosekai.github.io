@@ -1,0 +1,187 @@
+/****
+	Adjusment settings	
+****/
+
+*{
+	box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0;
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+.body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/****
+	Header
+****/
+
+.header{
+	width: 100%;
+	border-color: #FFF;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.logo, .nav{
+	display: inline-block;
+	width: 49%;
+}
+
+.nav{
+	text-align: right;
+}
+
+.nav__list{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav__item{
+	display: inline-block;
+}
+
+.nav__link{
+	text-decoration: none;
+	padding: 25px 15px;
+	display: block;
+}
+
+.nav__link:hover{
+	background: #ccc;
+}
+
+/****
+	cards
+****/
+
+.cards__list{
+	background: #F5F5F5;
+	border-radius: 3px;
+	border: 1px solid #ededed;
+	padding: 0;
+	list-style: none;
+}
+
+.cards__item{
+	padding: 15px;
+}
+
+.cards__img-wrap{
+	margin: 0;
+	width: 80px;
+	height: 80px;
+}
+
+.cards__btn-wrap{
+	background: #FFF;
+	border:1px solid #ededed;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.cards__btn-item{
+	text-decoration: none;
+	color: #000;
+	font-size: 5px;
+}
+
+.fa-heart, .fa-folder-open, .fa-shopping-cart{
+	font-size: 15px;
+	color: grey;
+	opacity: 0.3;
+	padding: 5px;
+}
+
+.fa-heart:hover, .fa-folder-open:hover, .fa-shopping-cart:hover{
+	opacity: 1;
+}
+
+.cards__content-element{
+	display: inline-block;
+}
+
+.cards__title-wrap{
+	height: 117px;
+	width: 95px;
+	vertical-align: top;
+	margin-left: 7px;
+}
+
+.cards__title-link{
+	font-weight: bold;
+	display: inline-block;
+	width: 80px;
+	height: 55px;
+	text-decoration: none;
+	color: black;
+}
+
+.cards__title-link:hover{
+	text-decoration: underline;
+}
+
+.cards__autor-link{
+	display: inline-block;
+	width: 95px;
+	height: 37px;
+	text-decoration: none;
+	color: blue;
+	vertical-align: middle;
+}
+
+.cards__autor-link:hover{
+	text-decoration: underline;
+}
+
+.cards__desc{
+	height: 117px;
+	width: 800px;
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+.cards__desc-text{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	color: #6C6C6C;
+}
+
+.cards__price-wrap{
+	height: 117px;
+	width: 95px;
+	vertical-align: top;
+	margin-left: 5px;
+	text-align:center;
+}
+
+.cards__price{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.cards__sales{
+	display: inline-block;
+	vertical-align: middle;
+	width: 95px;
+	height: 37px;
+	color: #545454;
+}

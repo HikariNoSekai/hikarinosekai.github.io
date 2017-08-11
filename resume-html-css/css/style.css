@@ -1,0 +1,157 @@
+
+ @font-face {
+    font-family: Astakhov First Two Stripes; /* Имя шрифта */
+    src: url(../fonts/10568.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+	font-size: 20px;
+	line-height: 30px;
+	background: #f6d654 url(../img/Sunset.png) no-repeat;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */	
+}
+
+h1, h2, h3{
+	text-align: center;
+}
+
+.headspan{
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial, sans-serif;
+}
+
+.headspan2{
+	padding: 10px 0;
+	display: block;
+	text-align: center;
+	font-size: 25px;
+	font-family: Arial, sans-serif;
+}
+
+.main_block {
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+overflow: auto;
+}
+
+.resume_block {
+	width: 800px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background-color: #FFF;
+	border: 1px solid #FFF;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+
+#profile_photo{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border: none;
+	border:1px solid #000;
+ 	border-radius: 10px;
+ 	-webkit-border-radius: 10px;
+ 	-moz-border-radius: 10px;
+	
+}
+
+.main_list{
+	font-weight: bold;	
+}
+
+.info_block{
+	width: 100%;
+	padding: 10px 0;
+}
+
+
+.info_block ol{
+	counter-reset: myCounter;
+}
+
+.info_block ol li{
+	list-style: none;
+}
+
+.info_block ol li:before{
+	counter-increment: myCounter;
+	content:counter(myCounter);
+	color: white;
+	background: red;
+	display: inline-block;
+	text-align: center;
+	margin: 5px 10px;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+}
+
+.info_block ul{
+	counter-reset: myCounter;
+}
+
+.info_block ul li{
+	list-style: none;
+}
+
+.info_block ul li:before{
+	counter-increment: myCounter;
+	content:counter(myCounter);
+	color: white;
+	background: #2980B9;
+	display: inline-block;
+	text-align: center;
+	margin: 5px 10px;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+}
+
+
+.social_block{
+	width: 100%;
+	text-align: center; /*пытаемся выровнять содержимое по центру */
+	padding: 10px 0;
+	background: #6699FF;  /*для наглядности обозначаем родителя */
+	float: center; /* чтоб высота родителя была с учетом плавающих потомков */
+	border: 3px solid #6699FF;
+	border-radius: 10px;
+	
+}
+
+.social_block ul{
+	list-style: none;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.social_block ul li{
+	margin-right: 4px;
+	width: 23px;
+	height: 19px;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+	display:inline;
+	opacity: 1;
+}
+
+.social_block ul li a:hover{
+	opacity: 0.75;
+}

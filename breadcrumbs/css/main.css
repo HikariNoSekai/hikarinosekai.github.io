@@ -1,0 +1,29 @@
+* {
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+}
+
+.nav_list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav_item{
+	float: left;
+	padding: 3px;
+	text-decoration: none;
+}
+
+.nav_item:not(:last-child)::after {
+	content: '>';
+	padding: 15px;
+}
+
+
+.nav_item:last-child a{
+	text-decoration: none;
+	color: #000;
+	pointer-events: none;
+    cursor: default; 
+}
