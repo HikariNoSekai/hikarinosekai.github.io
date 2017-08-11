@@ -114,12 +114,13 @@ body{
 	margin-top: 20px;
 }
 
-.list__item:hover{
-	background:rgba(118,117,128,0.1);
+.list__item:hover .link__list{
+	color: #ec5a62;
+	
 }
 
-.list__link:hover{
-	color: #ec5a62;
+.list__item .list__link:hover{
+	background:rgba(118,117,128,0.1);
 }
 
 .list--popular .list__img{
