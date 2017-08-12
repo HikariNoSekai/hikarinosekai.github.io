@@ -33,8 +33,6 @@ body{
 
 .header{
 	width: 100%;
-	/* border-color: #FFF; */
-	/* box-shadow: 0 5px 10px rgba(0, 0, 0, .1); */
 }
 
 .search__content, .search__btn{
@@ -94,8 +92,7 @@ body{
 }
 
 .list__img{
-	display: inline-block;
-	border: 1px solid rgba(118,117,128,0.05);
+	/* border: 1px solid rgba(118,117,128,0.05); */
 	border-radius: 30px;
 	margin-left: 10px;
 }
@@ -110,8 +107,7 @@ body{
 
 .list__link--text{
 	display:inline-block;
-	height: 100%;
-	margin-top: 20px;
+	margin-top: 16px;
 }
 
 .list__item:hover{
