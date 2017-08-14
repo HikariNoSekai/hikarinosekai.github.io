@@ -64,7 +64,7 @@ body{
 	width: 1400px;
 	height: 940px;
 	box-shadow: 0 0 68px rgba(0, 0, 0, .1);
-	padding: 122px;
+	padding: 50px 122px;	
 }
 
 .text__title{
@@ -100,7 +100,7 @@ body{
 	opacity: 0.7;
 	text-align: center;
 	padding-top: 36px;
-	padding-bottom: 36px;
+	padding-bottom: 36
 }
 
 .citate:before{
