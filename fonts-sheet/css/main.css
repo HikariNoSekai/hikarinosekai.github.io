@@ -1,0 +1,129 @@
+@import "../libs/normalize/normalize.css";
+@fontface{
+	font-family: 'PlayfairDisplay';
+	src: url('../fonts/PlayfairDisplay-Regular.otf');
+}
+
+@fontface{
+	font-family: 'LatoHairline';
+	src: url('../fonts/Lato-Hairline.ttf');
+}
+
+@fontface{
+	font-family: 'Lato-Thin';
+	src: url('../fonts/Lato-Thin.ttf');
+}
+
+@fontface{
+	font-family: 'Lato-Light';
+	src: url('../fonts/Lato-Light.ttf');
+}
+
+@fontface{
+	font-family: 'Lato-Bold';
+	src: url('../fonts/Lato-Bold.ttf');
+}
+
+/***
+	default settings
+***/
+
+*{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin-bottom: 0;
+}
+
+/* .container{
+	width: 945px;
+	margin: 0 auto;
+} */
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+body{
+	background: #FFF;
+}
+
+/***
+	text
+***/
+.text-wrap{
+	width: 1600px;
+	height: 1200px;
+	padding: 100px 130px;
+	background: #fff;
+}
+
+.text__block{
+	width: 1400px;
+	height: 940px;
+	box-shadow: 0 0 68px rgba(0, 0, 0, .1);
+	padding: 122px;
+}
+
+.text__title{
+	font-family: 'PlayfairDisplay', sans-serif;
+	font-weight: normal;
+	font-size: 2.625rem;
+}
+
+.t-symbol{
+	float:left;
+	font-family: 'PlayfairDisplay', sans-serif;
+	font-size: 6.875rem;
+	margin: 0;
+	margin-top: 10px;
+	margin-right: 24px;
+}
+
+.paragraph1, .paragraph2, .paragraph3{
+	font-size: 1.125rem;
+	font-family: 'Lato-Light', sans-serif;
+	line-height: 34pt;
+	opacity: .5;
+	
+}
+
+.citate{
+	margin: 0;
+	height: 96px;
+	width: 800px;
+	font-family: 'Lato-Light', sans-serif;
+	font-style: italic;
+	font-size: 1.5rem;
+	opacity: 0.7;
+	text-align: center;
+	padding: 36;
+}
+
+.citate:before{
+	content: "``";
+	float: left;
+	padding-right: 15px;
+}
+
+.citate:after{
+	content: "``";
+	float: right;
+}
+
+.discover-btn{
+	font-family: 'Myriad Pro', sans-serif;
+	letter-spacing: 3px;
+	font-size: 1.125rem;
+	width: 262px;
+	height: 67.5px;
+	border: 1px solid #FF9966;
+	color: #FF9966;
+}
+
+.discover-btn:hover{
+	background: #FF9966;
+	color: #fff; 
+}
