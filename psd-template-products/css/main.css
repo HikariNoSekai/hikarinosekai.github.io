@@ -253,6 +253,10 @@ body{
 
 /*** gallery ***/
 
+.gallery{
+	padding-bottom: 72px; 
+}
+
 .gallery__list{
 	font-size: 0;
 	display: flex;
