@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<title>Daily form</title>
 </head>
 <body>
@@ -17,7 +18,11 @@
 					<form action="register.php" class="daily-form--wrapper" method="">
 						
 						<div class="daily-form__title-wrap">
-							<img src="img/sign-up-con.png" alt="Sign up icon" class="daily-form__icon">
+							<picture>
+								<source media="(max-width: 801px)" 
+									srcset="img/sign-up-con.png 1.5x">
+								<img src="img/sign-up-con.png" alt="Sign up icon" class="daily-form__icon">
+							</picture>
 							<span class="daily-form__title-text">Create your free acoount</span>
 							<p class="daily-form__title-desc">Come and join our cool and amazing community, fill in your details to get started. Already have an account? <a href="#" class="daily-form__link">Log in.</a></p>
 						</div>
