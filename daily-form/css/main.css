@@ -1,5 +1,4 @@
 @import url('../libs/normalize/normalize.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 
 /***
 	default settings
@@ -60,7 +59,7 @@ body{
 }
 
 .daily-form__title-text{
-	// display: inline-block;
+	/* display: inline-block; */
 	padding-left: 5px;
 	font-family: Arial, sans-serif;
 	color: #1b1c1d;
