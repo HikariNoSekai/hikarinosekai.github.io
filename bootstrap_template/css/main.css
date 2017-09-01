@@ -17,7 +17,7 @@ ul, ol {
     padding: 0;
 }
 
-/** 
+/**
 *    0. components
 **/
 
@@ -59,7 +59,7 @@ ul, ol {
 
 .header__top {
     background: #fff;
-    padding: 9px 0;
+    /* padding: 9px 0; */
     border-bottom: 1px solid #97455f;
     position: relative;
 }
@@ -70,14 +70,20 @@ ul, ol {
     height: 25px;
     position: absolute;
     right: 0;
-    bottom: -35px;
+    /* bottom: -35px; */
     cursor: pointer;
     border-radius: 0 0 5px 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.125rem;
 }
 
 /**
     1.1.1 Social
 **/
+.social__list{
+    margin: 9px 0;
+}
 
 .social__item {
     display: inline-block;
@@ -108,6 +114,7 @@ ul, ol {
 **/
 
 .nav__list{
+    margin: 9px 0;
     text-align: right;
     padding: 6px 0;
 }
@@ -253,7 +260,7 @@ ul, ol {
 }
 
 .search-form__btn:hover{
-    background: #673041; 
+    background: #673041;
 }
 
 /**
@@ -363,7 +370,6 @@ ul, ol {
     font-size: 1rem;
     font-weight: 400;
     line-height: 22.4px;
-  
     margin: 0;
     padding: 0;
 }
@@ -407,12 +413,13 @@ ul, ol {
     background: #333;
 }
 
-/* 
+/*
     2.3 Posts
 */
 
 .posts{
     margin-top: 40px;
+    padding: 0 30px 0 30px;
 }
 
 .posts__item{
@@ -443,22 +450,28 @@ ul, ol {
 .posts__desc{
     margin-top: 10px;
     color: #999;
+    font-weight: 400;
     font-size: 0.8125rem;
     line-height: 1.125rem;
 }
 
-/* 
+/*
     2.4 Testimonials
 */
 
 .testimonials{
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    padding: 0 30px 0 30px;
+}
+
+.testimonials__item{
+    margin-top: 33px;
 }
 
 .testimonials__img{
-    width: 130px;
-    height: 130px;
-    background-color: #999;
+    width: 128px;
+    height: 128px;
+    background-color: #333;
     border-radius: 50%;
     display: inline-block;
     vertical-align: top;
@@ -471,7 +484,8 @@ ul, ol {
     margin-left: 25px;
 }
 
-.testimonials__quot-wrap, .testimonials__name-wrap{
+.testimonials__quot-wrap,
+.testimonials__name-wrap{
     display: inline-block;
     vertical-align: top;
 }
@@ -480,8 +494,250 @@ ul, ol {
     margin-left: 10px;
 }
 
-.testimonials__name, .testimonials__link{
+.testimonials__name,
+.testimonials__link{
     display: block;
 }
 
-.testimonials__quot
+.testimonials__link{
+    color: #97455F;
+}
+
+.testimonials__link:hover{
+    color: #97455F;
+}
+
+.testimonials__desc--after-quot {
+    margin-top: 10px;
+}
+
+/**
+ * 2.5 Shout
+ **/
+
+.shout{
+    margin: 50px 30px;
+    padding: 24px;
+    background: #97455F;
+    border-radius: 4px;
+    font-family: Georgia, sans-serif;
+}
+
+.shout__title{
+    padding: 0;
+    margin: 0;
+    color: #e5e5e5;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.shout__desc{
+    padding: 0;
+    margin: 0;
+    color: #e5e5e5;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.shout__btn{
+    padding: 19px 11px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background: #FFF;
+    color: #97455f;
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+.shout__btn:hover{
+    background: rgba(255, 255, 255, .85);
+}
+
+/**
+ * 3. Footercontent
+ */
+
+/**
+ * 3.1 Footer
+ */
+.footer{
+    background: #EBEBEB;
+    padding: 40px 20px;
+    border-top: solid 5px #d2d2d2;
+}
+
+/**
+ * 3.1.1 Latest news
+ */
+
+.latest-news__title{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, sans-serif;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.latest-news__list{
+    margin-top: 21px;
+}
+
+.latest-news__item{
+    margin-bottom: 31px;
+}
+
+.latest-news__item:last-child{
+    margin-bottom: 0;
+}
+
+.latest-news__img{
+    width: 95px;
+    height: 95px;
+    background-color: #333;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.latest-news__desc-wrap{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.latest-news__item-title{
+    font-family: Georgia, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #97455F;
+    margin-top: 0;
+}
+
+.latest-news__desc{
+    margin-top: 19px;
+    font-family: Georgia, sans-serif;
+    color: #999;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.8;
+}
+
+/**
+ * 3.1.2 Company details
+ */
+
+.details__title{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, sans-serif;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.details__list{
+    margin-top: 20px;
+}
+
+.details__info{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, sans-serif;
+    color: #999;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.details__email{
+    color: #97455F;
+}
+
+.details__email:hover{
+    color: #97455F;
+}
+
+.details__info--hours{
+    font-weight: bold;
+}
+
+/**
+ * 3.1.3 Form
+ */
+
+.form__title{
+    padding: 0;
+    margin: 0 0 13px 0;
+    font-family: Georgia, sans-serif;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.form__item{
+    padding: 10px;
+    border: none;
+    background: #FFF;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form__item--message{
+    resize: none;
+}
+
+.form__item--btn{
+    padding: 5px;
+    width: 30%;
+    background: #97455F;
+    color: #FFF;
+    font-family: Georgia, sans-serif;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1.583;
+    text-transform: uppercase;
+}
+
+.form__item--btn:hover{
+    background: #673041;
+}
+/**
+ * 3.2 Copyright
+ */
+
+.copyright{
+    background: #EBEBEB;
+    border-top: solid 1px #fff;
+    border-radius: 0 0 4px 4px;
+    padding: 24px 20px;
+    font-family: Georgia, sans-serif;
+    color: #999;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.copyright__title{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.copyright__autor{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
