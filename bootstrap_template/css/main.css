@@ -16,7 +16,6 @@ ul, ol {
     margin: 0;
     padding: 0;
 }
-
 /**
 *    0. components
 **/
@@ -25,6 +24,10 @@ ul, ol {
     margin-top: 20px;
     position: relative;
     text-align: center;
+}
+
+.page-title--posts{
+    margin: 20px 30px 0 30px;
 }
 
 .page-title__line{
@@ -76,8 +79,12 @@ ul, ol {
     text-align: center;
     color: #fff;
     font-size: 1.125rem;
+    transition: all .2s ease-in-out;
 }
 
+.hide-btn:hover{
+    background: #673041;
+}
 /**
     1.1.1 Social
 **/
@@ -88,6 +95,7 @@ ul, ol {
 .social__item {
     display: inline-block;
     margin-left: 10px;
+    position: relative;
 }
 
 .social__item:first-child {
@@ -108,6 +116,12 @@ ul, ol {
     color: #fff;
 }
 
+.social__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 /**
     1.1.2 Navigation
@@ -136,13 +150,17 @@ ul, ol {
     position: relative;
 }
 
+.nav__link:hover{
+    color: #97455f;
+}
+
 .nav__item:not(:last-child) .nav__link:before {
     content: '';
     width:1px;
     height: 100%;
     background: #97455f;
     position: absolute;
-    right: -6px;
+    right: -9px;
     top:0;
 }
 
@@ -256,7 +274,7 @@ ul, ol {
     line-height: 14.4px;
     text-align: center;
     text-transform: uppercase;
-    transition: all .2s ease-in;
+    transition: all .2s ease-in-out;
 }
 
 .search-form__btn:hover{
@@ -285,6 +303,7 @@ ul, ol {
     display: inline-block;
     padding: 16px;
     height: 100%;
+    transition: all .2s ease-in-out;
 }
 
 .main-menu__item:first-child{
@@ -317,7 +336,7 @@ ul, ol {
     2.2 Slider
 **/
 
-.slider-wrapper{
+.slider{
     background: #FFF;
     padding: 30px;
 }
@@ -326,14 +345,14 @@ ul, ol {
     2.2.1 Slider items
 **/
 
-.slider-items{
+.slider__items{
     background: #333;
     height: 360px;
     width: 100%;
     position: relative;
 }
 
-.slider-items__desc{
+.slider__items-desc{
     position: absolute;
     font-family: Georgia, sans-serif;
     color: #FFF;
@@ -345,7 +364,7 @@ ul, ol {
     transform: translate(-50%, -50%);
 }
 
-.slider-items__overlay{
+.slider__items-overlay{
     background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
     padding: 20px;
@@ -354,7 +373,7 @@ ul, ol {
     bottom: 28px;
 }
 
-.slider-items__overlay-header{
+.slider__items-overlay-header{
     font-family: Georgia, sans-serif;
     color: #383838;
     font-size: 2.25rem;
@@ -364,7 +383,7 @@ ul, ol {
     padding: 0;
 }
 
-.slideslider-items__overlay-text{
+.slideslider__items-overlay-text{
     font-family: Georgia, sans-serif;
     color: #383838;
     font-size: 1rem;
@@ -381,8 +400,8 @@ ul, ol {
     margin-top: 20px;
     position: absolute;
     bottom: 0;
-    left: 45%;
-    right: 45%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .slider-nav__item:last-child{
@@ -403,6 +422,7 @@ ul, ol {
     cursor: pointer;
     overflow: hidden;
     display: block;
+    transition: all .2s ease-in-out;
 }
 
 .slider-nav__circle-current{
@@ -436,7 +456,7 @@ ul, ol {
 
 .posts__desc-wrap{
     display: inline-block;
-    width: 200px;
+    width: 260px;
     vertical-align: top;
     margin-left: 10px;
 }
@@ -484,6 +504,20 @@ ul, ol {
     margin-left: 25px;
 }
 
+.testimonials__desc{
+    font-family: Georgia;
+    color: #999999;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+.testimonials__title{
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
 .testimonials__quot-wrap,
 .testimonials__name-wrap{
     display: inline-block;
@@ -499,7 +533,21 @@ ul, ol {
     display: block;
 }
 
+.testimonials__name{
+    font-family: Georgia, sans-serif;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 7px;
+}
+
 .testimonials__link{
+    font-family: Georgia, sans-serif;
+    color: #97455f;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1;
     color: #97455F;
 }
 
@@ -570,6 +618,7 @@ ul, ol {
     background: #EBEBEB;
     padding: 40px 20px;
     border-top: solid 5px #d2d2d2;
+    border-bottom: solid 1px #bcbcbc;
 }
 
 /**
@@ -708,6 +757,7 @@ ul, ol {
     font-weight: 400;
     line-height: 1.583;
     text-transform: uppercase;
+    transition: all .2s ease-in-out;
 }
 
 .form__item--btn:hover{
