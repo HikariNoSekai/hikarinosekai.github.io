@@ -124,6 +124,9 @@
 		text-align: left;
 	}
 	/* header bottom */
+	.logo__header{
+		font-size: 1.125rem;
+	}
 	.header__bottom{
 		padding: 10px 0 180px 0;
 	}
@@ -231,8 +234,15 @@
 		text-align: left;
 	}
 	/* header bottom */
+	.logo__header{
+		font-size: 1.625rem;
+	}
 	.header__bottom{
 		padding: 10px 0 180px 0;
+	}
+	/* page title */
+	.page-title{
+		margin-top: 20px;
 	}
 	/* slider */
 	.slider__items-overlay{
