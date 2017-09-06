@@ -161,6 +161,7 @@ a
 	border: 2px solid #ccc
 	border-radius: 50%
 	display: inline-block
+	position: relative
 	&:active
 		border-color: $maincolor
 	i
@@ -171,6 +172,10 @@ a
 		text-align: center
 		&:active
 			color: $maincolor
+
+.social__link
+	position: absolute
+	@include centerXY
 /**
  * Boxes
 .boxes__list

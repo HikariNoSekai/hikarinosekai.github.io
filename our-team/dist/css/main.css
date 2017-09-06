@@ -176,7 +176,8 @@ a {
   height: 26px;
   border: 2px solid #ccc;
   border-radius: 50%;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
   .social__item:active {
     border-color: #ffcc00; }
   .social__item i {
@@ -187,6 +188,14 @@ a {
     text-align: center; }
     .social__item i:active {
       color: #ffcc00; }
+
+.social__link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
 
 /**
  * Boxes */
