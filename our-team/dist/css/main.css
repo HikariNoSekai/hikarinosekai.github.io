@@ -107,7 +107,8 @@ a {
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   text-align: center;
-  width: 100%; }
+  width: 75%;
+  margin: 0 auto; }
 
 /**
  * Slider image */
