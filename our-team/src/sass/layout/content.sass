@@ -1,0 +1,185 @@
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+@import url('https://fonts.googleapis.com/css?family=Roboto:900')
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+
+/**
+ * Primary settings
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+
+html, body
+  display: flex
+  flex-flow: column nowrap
+  width: 100%
+  min-height: 100vh
+
+
+html
+  font-size: 100%
+
+
+ul, ol
+  list-style: none
+
+
+.maincontent
+  flex: 1 0
+
+
+a
+  display: block
+  text-decoration: none
+
+/**
+ * Logo
+.logo
+  	text-align: center
+  	text-transform: uppercase
+
+.logo__tesis
+	margin-top: 5px
+	font-family: 'Raleway', sans-serif
+	color: #898f8f
+	@include fzrem(14)
+	font-weight: 500
+	@include lhrem(18)
+
+.logo__title
+	margin-top: 8px
+	font-family: 'Roboto', sans-serif
+	color: $maincolor
+	@include fzrem(36)
+	font-weight: 900
+	@include lhrem(38)
+
+/**
+ * Icon
+.icon-wrapper
+	margin-top: 20px
+	margin-bottom: 25px
+	@include mainbackground
+	height: 1px
+	width: 100%
+
+.icon
+	background: #FFF
+	height: 20px
+	width: 40px
+	position: relative
+	top: -10px
+	@include centerX
+
+.ion-bonfire
+	position: absolute
+	top: -10px
+	left: 50%
+	transform: translate(-50%, 10px)
+	z-index: 999
+	color: $maincolor
+	@include fzrem(18)
+	font-weight: 400
+	@include lhrem(20)
+
+/**
+ * Slider
+
+.slider__item
+	display: flex
+	flex-flow: column nowrap
+	text-align: center
+	width: 100%
+
+/**
+ * Slider image
+
+.slider__img
+	border: 1px solid $maincolor
+/**
+ * Slider line
+
+.slider__line
+	margin: 10px auto
+	width: 100%
+	height: 1px
+	background: $maincolor
+/**
+ * Slider content
+.slider__header
+	font-family: 'Roboto', sans-serif
+	color: #666
+	@include fzrem(24)
+	font-weight: 900
+	@include lhrem(18)
+
+.slider__content-line
+	margin: 12px auto
+	height: 1px
+	background: $maincolor
+	width: 20%
+
+.slider__position
+	font-family: 'Raleway', sans-serif
+	@include fzrem(16)
+	font-weight: 400
+	@include lhrem(24)
+
+.slider__desc
+	font-family: 'Raleway', sans-serif
+	color: #333
+	@include fzrem(11)
+	font-weight: 500
+	@include lhrem(16)
+
+.slider__item-view
+	border: 1px solid $maincolor
+	background: #FFF
+	padding: 6px 12px
+	width: 100%
+	font-family: 'OpenSans', sans-serif
+	color: #666
+	@include fzrem(10)
+	font-weight: 700
+	@include lhrem(18)
+	cursor: pointer
+	&:active
+		color: $maincolor
+		background: whitesmoke
+/**
+ * social
+
+.social__list
+	margin: 10px auto
+
+.social__item
+	width: 26px
+	height: 26px
+	border: 2px solid #ccc
+	border-radius: 50%
+	display: inline-block
+	&:active
+		border-color: $maincolor
+	i
+		color: #ccc
+		@include fzrem(11)
+		font-weight: 400
+		@include lhrem(10)
+		text-align: center
+		&:active
+			color: $maincolor
+/**
+ * Boxes
+.boxes__list
+	margin-bottom: 10px
+
+.boxes__item
+	display: inline-block
+	border-width: 3px
+	width: 4px
+	height: 2px
+	background: $maincolor
+	&:nth-child(2n)
+		width: 14px

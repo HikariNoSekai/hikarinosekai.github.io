@@ -1,0 +1,20 @@
+$mainfont: 16
+$maincolor: #ffcc00
+
+@mixin centerX
+	left: 50%
+	transform: translateX(-50%)
+
+@mixin centerXY
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+
+@mixin mainbackground
+	background: #ffcc00
+
+@mixin fzrem($fontsize)
+	font-size: $fontsize/$mainfont +rem
+
+@mixin lhrem($fontsize)
+	line-height: $fontsize/$mainfont +rem

@@ -1,0 +1,204 @@
+@import url(../libs/normalize/normalize.css);
+@import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/**
+ * Primary settings */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  width: 100%;
+  min-height: 100vh; }
+
+html {
+  font-size: 100%; }
+
+ul, ol {
+  list-style: none; }
+
+.maincontent {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0; }
+
+a {
+  display: block;
+  text-decoration: none; }
+
+/**
+ * Logo */
+.logo {
+  text-align: center;
+  text-transform: uppercase; }
+
+.logo__tesis {
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+  color: #898f8f;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.125rem; }
+
+.logo__title {
+  margin-top: 8px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffcc00;
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 2.375rem; }
+
+/**
+ * Icon */
+.icon-wrapper {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background: #ffcc00;
+  height: 1px;
+  width: 100%; }
+
+.icon {
+  background: #FFF;
+  height: 20px;
+  width: 40px;
+  position: relative;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.ion-bonfire {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 10px);
+  -ms-transform: translate(-50%, 10px);
+  transform: translate(-50%, 10px);
+  z-index: 999;
+  color: #ffcc00;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.25rem; }
+
+/**
+ * Slider */
+.slider__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  text-align: center;
+  width: 100%; }
+
+/**
+ * Slider image */
+.slider__img {
+  border: 1px solid #ffcc00; }
+
+/**
+ * Slider line */
+.slider__line {
+  margin: 10px auto;
+  width: 100%;
+  height: 1px;
+  background: #ffcc00; }
+
+/**
+ * Slider content */
+.slider__header {
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.125rem; }
+
+.slider__content-line {
+  margin: 12px auto;
+  height: 1px;
+  background: #ffcc00;
+  width: 20%; }
+
+.slider__position {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem; }
+
+.slider__desc {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1rem; }
+
+.slider__item-view {
+  border: 1px solid #ffcc00;
+  background: #FFF;
+  padding: 6px 12px;
+  width: 100%;
+  font-family: 'OpenSans', sans-serif;
+  color: #666;
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  cursor: pointer; }
+  .slider__item-view:active {
+    color: #ffcc00;
+    background: whitesmoke; }
+
+/**
+ * social */
+.social__list {
+  margin: 10px auto; }
+
+.social__item {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: inline-block; }
+  .social__item:active {
+    border-color: #ffcc00; }
+  .social__item i {
+    color: #ccc;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    line-height: 0.625rem;
+    text-align: center; }
+    .social__item i:active {
+      color: #ffcc00; }
+
+/**
+ * Boxes */
+.boxes__list {
+  margin-bottom: 10px; }
+
+.boxes__item {
+  display: inline-block;
+  border-width: 3px;
+  width: 4px;
+  height: 2px;
+  background: #ffcc00; }
+  .boxes__item:nth-child(2n) {
+    width: 14px; }
+
+/*# sourceMappingURL=main.css.map */
