@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800')
+@import url('https://fonts.googleapis.com/css?family=Oswald:700')
+
+
+/**
+ * Primary settings
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  position: relative
+  width: 100%
+  height: 100%
+  color: white
+  background-color: black
+
+html
+  width: 100%
+  height: 100%
+  font-size: 100%
+
+ul, ol
+  list-style: none
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+
+.maincontent
+  flex: 1 0
+
+a
+  display: block
+  text-decoration: none
+
+/**
+  * Nav
+#mainNav
+  font-family: 'Porter Bold DEMO', Helvetica, Arial, sans-serif
+  margin-bottom: 0
+  text-transform: uppercase
+  border-bottom: 1px solid fade-out(white, .5)
+  background-color: rgba(31, 31, 31, .95)
+  .navbar-toggler
+    @include rem(14)
+    padding: 11px
+    color: white
+    border: 1px solid white
+    transition: color .3 ease-in-out
+    &:focus
+      color: $maincolor
+  .navbar-brand
+    @include rem(30)
+    letter-spacing: 0.3rem
+    font-weight: 700
+  .navbar-brand--ichar
+    color: $maincolor
+  a
+    color: white
+  .nav-item
+    margin-top: 10px
+    text-align: right
+    transition: background 0.3s ease-in-out
+    &:hover
+      color: fade(white, 80%)
+      outline: none
+      background-color: transparent
+    &:active,&:focus
+      outline: none
+      background-color: transparent
+  .nav-link
+    font-family: 'Oswald', Helvetica, Arial, sans-serif
+    @include rem(13)
+    font-weight: 700
+    transition: color .3s ease-in-out
+    &:active, &:focus
+      color: $maincolor
+  @include medsize(medium)
+    padding-top: 20px
+    padding-bottom: 20px
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s
+    letter-spacing: 0.1rem
+    border-bottom: 1px solid rgba(25, 25, 25, .1)
+    background: transparent
+    .nav-item
+      margin: 5px 0 0 50px
+      // margin-left: 40px
+      &:first-child
+        margin-left: 0
+    .navbar-brand
+      letter-spacing: 1rem
+    &.navbar-shrink
+      padding-top: 10px
+      padding-bottom: 10px
+      border-bottom: 1px solid fade-out(white, .5)
+      background: rgba(31, 31, 31, .95)
+    .nav-link
+      transition: color .3s ease-in-out
+      &:hover
+        color: $maincolor
+    .nav-link.active
+      outline: none
+      background-color: rgba(white, .2)
+      &:hover
+        color: $maincolor
+
+.masthead
+  position: relative
+  display: table
+  width: 100%
+  height: auto
+  padding: 150px 0
+  text-align: left
+  color: white
+  background: url('../img/intro-bg.jpg') no-repeat bottom center scroll
+  background-color: black
+  background-size: cover
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif
+  .intro-body
+    display: table-cell
+    vertical-align: middle
+    .slider__heading
+      @include rem(32)
+    .slider__text
+      @include rem(11)
+      &:before
+        content: ''
+        display: block
+        height: 2px
+        width: 15%
+        margin-bottom: 5px
+        vertical-align: middle
+        background: $maincolor
+    .slider__project
+      display: block
+      width: 100%
+      border: 1px solid #fff
+      background: rgba(255, 255, 255, .1)
+      margin-top: 20px
+      color: #fff
+      font-family: 'Oswald', Helvetica, Arial, sans-serif
+      font-weight: 700
+      @include rem(12)
+      padding: 7px
+      text-decoration: none
+      text-align: center
+      text-transform: uppercase
+      transition: background .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out
+      &:active, &:focus
+          color: #333
+          background: $maincolor
+          border: 1px solid $maincolor
+  @include medsize(low)
+    height: 100%
+    padding: 0
+    .intro-body
+      .slider__heading
+        @include rem(82)
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: 0.15rem
+      .slider__text
+        @include rem(18)
+        line-height: 1.667
+        font-weight: 300
+        &:before
+          content: ''
+          display: inline-block
+          width: 6%
+          margin-bottom: 0
+          margin-right: 5px
+      .slider__project
+        margin-top: 40px
+        @include rem(14)
+        padding: 19px 34px
+        width: 15%
+        border: 1px solid #FFF
+        background: rgba(255, 255, 255, .1)
+        transition: background .3s ease-in-out, border .3s ease-in-out, color .3s ease-in-out
+        &:hover
+          color: #333
+          background: $maincolor
+          border: 1px solid $maincolor
+
+.btn-scroll
+  position: absolute
+  bottom: 85px
+  transition: background 0.3s ease-in-out
+  text-align: left
+  opacity: 0
+  will-change: opacity
+  @include medsize(medium)
+    opacity: 1
+    .btn__arrow
+      transform: rotate(90deg)
+      margin-right: 10px
+      opacity: .25
+      transition: opacity .3s ease-in-out
+      &:hover
+        opacity: 1
+    .btn__text
+      color: rgba(255, 255, 255, .25)
+      text-transform: uppercase
+      font-family: 'Oswald', Helvetica, Arial, sans-serif
+      @include rem(13)
+      margin-top: 15px
+      font-weight: 700
+      transition: color .3s ease-in-out
+
+.slider-nav
+  position: absolute
+  bottom: 30px
+  right: 40%
+  .slider-nav__list
+    margin: 0
+  .slider-nav__item
+    display: inline-block
+    margin-left: 15px
+    &:first-child
+      margin-left: 0
+  .nav__arrow
+    cursor: pointer
+  .nav__arrow--left
+    transform: rotate(180deg)
+  .nav__arrow--nolist
+    opacity: .5
+  @include medsize(medium)
+    right: 30%
+    bottom: 82px
