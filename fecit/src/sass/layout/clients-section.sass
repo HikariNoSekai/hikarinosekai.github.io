@@ -1,15 +1,14 @@
 /**
-.services-section
-  padding-top: 250px
-  padding-bottom: 250px
-
-/**
  * Tesis with image background
 
 .tesis__img-wrap
 	background: url('../img/clients-bg.jpg') no-repeat center top fixed
 	background-size: cover
 	height: 100vh
+	@include mediamax(768px)
+		height: 400px
+	@include mediamax(560px)
+		height: 300px
 
 
 /**
@@ -105,99 +104,21 @@
 
 .clients-companies-wrap
 	background: #FFF
-	padding-top: 90px
-	padding-bottom: 90px
+	padding: 90px 0
+	@include mediamax(768px)
+		padding: 50px 0
+	@include mediamax(560px)
+		padding: 20px 0
 
 .clients-companies__list
 	display: flex
 	flex-flow: row nowrap
 	justify-content: space-between
+	@include mediamax(768px)
+		justify-content: center
+		align-items: center
+		flex-flow: column nowrap
 
-/**
- * Contact section
-
-.contact-section
-	background: #FFF
-	color: #000
-	padding-bottom: 100px
-
-
-#map
-	// position: relative
-	width: 100%
-	height: 350px
-	&:before
-		content: ''
-		position: absolute
-		top: 0
-		left: 0
-		height: 100%
-		width: 100%
-		// background: rgba(92, 241, 190, .8)
-		// z-index: 999
-
-.contact-text-wrap
-	width: 45%
-	margin: 0 auto
-	padding-top: 100px
-	padding-bottom: 95px
-
-.contact__heading
-	margin-top: 32px
-
-.contact__desc
-	margin-top: 46px
-	@include rem(22)
-	line-height: 1.545
-	font-weight: 400
-
-/**
- * Footer
-.footer
-	display: flex
-
-.footer__contacts, .footer__copyright
-	padding: 21px
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif
-	color: #333
-	font-weight: 300
-
-.footer__contacts
-	@include rem(14)
-	text-align: left
-	.footer__link
-	span
-		color: #c2c2c2
-
-.footer__copyright
-	margin-left: 210px
-	opacity: .5
-	@include rem(12)
-	text-align: right
-
-/** social */
-.social__list
-	margin-left: 178px
-	display: flex
-
-.social__item
-	border: 1px solid #d6d6d6
-	background-color: rgba(22, 34, 64, 0)
-	width: 60px
-	height: 60px
-	transition: background .3s ease-in-out, border-color .3s ease-in-out
-	&:not(:first-child)
-		border-left: none
-	&:hover
-		background: $maincolor
-		border-color: $maincolor
-
-.social__link
-	padding: 21px
-	height: 100%
-	width: 100%
-	color: #333
-	@include rem(18)
-	transition: color .3s ease-in-out
-	&:hover
-		color: #333
+.clients-companies__item
+	@include mediamax(768px)
+		margin-top: 15px

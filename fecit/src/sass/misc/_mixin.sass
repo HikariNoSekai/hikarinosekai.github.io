@@ -1,5 +1,8 @@
 $mainfont: 16
 $maincolor: #5cf1be
+$mont: 'Montserrat', Helvetica, Arial, sans-serif
+$oswald: 'Oswald', Helvetica, Arial, sans-serif
+$porter: 'Porter Bold DEMO', Helvetica, Arial, sans-serif
 
 @mixin centerX
 	left: 50%
@@ -24,3 +27,11 @@ $maincolor: #5cf1be
 	@if ($size == 'low')
 		@media(min-width:768px)
 			@content
+
+@mixin media($size)
+	@media(min-width:$size)
+		@content
+
+@mixin mediamax($size)
+	@media(max-width:$size)
+		@content
